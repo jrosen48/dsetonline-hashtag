@@ -5,7 +5,7 @@ library(igraph)
 library(hrbrthemes)
 library(cowplot)
 
-df <- read_csv("2_tweets.csv")
+df <- read_csv("tweets.csv")
 
 df$date <- parse_date_time(df$date, "%a %b! %d! %H! %M! %S! %z! %y!")
 df$date <- with_tz(df$date, "America/Los_Angeles")
